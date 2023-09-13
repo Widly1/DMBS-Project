@@ -13,10 +13,7 @@
 #include <cppconn/prepared_statement.h>
 using namespace std;
 
-// This program adds a record to the musician table and
-// a record to the instrumentsplayed table with the musicians id
-// as a foreign key. Both tables use the auto increment feature to generate
-// the primary key.
+
 
 // Compile:
 // g++ -I/usr/include GameBoxinsert-copy.cpp -o GameBoxinsert-copy -I /usr/local/lib -lmysqlcppconn
