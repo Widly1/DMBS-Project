@@ -14,7 +14,6 @@
 using namespace sql;
 using namespace std;
 
-// This program retrieves all of the musicians
 
 // Compile:
 // g++ -I/usr/include GameBox.cpp -o GameBox -I /usr/local/lib -lmysqlcppconn
@@ -137,7 +136,7 @@ void countzip(){
 
 int cus_zip_code;
 cout << "Enter zip code: ";
-    cin >> cus_zip_code;
+cin >> cus_zip_code;
 
  
    prep_stmt = con->prepareStatement("SELECT COUNT(*) FROM Customers WHERE cus_zip_code = ?");
@@ -171,7 +170,8 @@ void deleteorder() {
     int result = prep_stmt->executeUpdate();
     if (result > 0) {
         cout << "Customer order deleted successfully." << endl;
-    } else {
+    } 
+    else {
         cout << "Customer Order not found for the given id " << endl;
     }
 }
@@ -184,9 +184,9 @@ void deleteorder() {
 
 /* Case 7    showorders();*/
 
-void showorders() {
+void showorders() 
+{
    
-     
  stmt = con->createStatement();
  res = stmt->executeQuery("SELECT * from Orders");
     
@@ -206,7 +206,7 @@ void showorders() {
      cout << endl;
      cout <<  " Order Type: " <<res->getString("order_type") << " ";
      cout << endl <<endl;
- }
+       }
      
  }
 
