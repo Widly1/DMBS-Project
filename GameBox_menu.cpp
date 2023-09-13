@@ -13,7 +13,6 @@
 #include <cppconn/prepared_statement.h>
 using namespace std;
 
-// This program retrieves all of the musicians
 
 // Compile:
 // g++ -I/usr/include GameBox_menu.cpp -o GameBox_menu -I /usr/local/lib -lmysqlcppconn
@@ -101,7 +100,7 @@ cout << endl;
 return EXIT_SUCCESS;
 
 }
-  /*Case 4        findall()*/
+  /*Case 4    findall()*/
  void findall() {
      
  stmt = con->createStatement();
@@ -124,7 +123,7 @@ return EXIT_SUCCESS;
  }
 
 
-            /*Case 3     findcompaitbility();*/
+            /*Case 3     findcompatibility();*/
 void findcompatibility() {
     int product_id, console_id;
     string product_name, console_type;
