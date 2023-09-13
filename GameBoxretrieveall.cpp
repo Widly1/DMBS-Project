@@ -12,7 +12,7 @@
 #include <cppconn/statement.h>
 using namespace std;
 
-// This program retrieves all of the musicians
+
 
 // Compile:
 // g++ -I/usr/include GameBoxretrieveall.cpp -o GameBoxretrieveall -I /usr/local/lib -lmysqlcppconn
@@ -39,7 +39,7 @@ try {
 
 con = driver->connect("tcp://127.0.0.1:3306", "root", "");
 
-/* Connect to the MySQL music database */
+/* Connect to the MySQL gamebox database */
     
  con->setSchema("GameBox");
  stmt = con->createStatement();
